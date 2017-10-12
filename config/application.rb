@@ -17,6 +17,7 @@ Bundler.require(*Rails.groups)
 
 module Module1Core
   class Application < Rails::Application
+    Mongoid.load! './config/mongoid.yml'
     config.generators {|g| g.orm :active_record}
     #config.generators {|g| g.orm :mongoid}
 
