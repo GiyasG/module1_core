@@ -9,6 +9,11 @@ group :development do
   gem 'spring', '~>2.0', '>=2.0.0'
   gem 'tzinfo-data', :platforms=>[:mingw, :mswin, :x64_mingw, :jruby]
   gem 'rspec-rails', '~>3.5', '>=3.5.2'
+  gem 'sqlite3', '~>1.3.12'
+end
+
+group :production do
+  gem 'rails_12factor', '~>0.0.3'
 end
 
 gem 'pg', '~> 0.20.0'
